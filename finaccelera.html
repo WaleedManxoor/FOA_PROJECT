@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To Accounting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+    <style>
+        *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body{
+        background: f1fbff;
+    }
+    .section-padding{
+        padding: 100px 0;
+    }
+    .navbar-nav a{
+    font-style: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-style: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.7); */
+    z-index: 1;
+}
+.w-100{
+    height: 100vh;
+}
+.services .card-body i{
+  font-style: 50px;
+}
+
+.team .card-body i{
+  font-style: 50px;
+}
+
+.team .card{
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width:786px)and(max-width:991px) {
+  .carousel-caption{
+    bottom: 370px;
+  }
+  .carousel-caption p{
+    width: 100%;
+  }
+  .card{
+    margin-bottom: 30px;
+  }
+  .img-area img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    carousel-caption h5{
+        font-style: 17px;
+    }
+    carousel-caption a{
+        padding: 10px 15px;
+    }
+    carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-style: 12px;
+    }
+    .about-text{
+      padding-top: 50px;
+    }
+    .card{
+      margin-bottom: 20px;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><span class="text-warning">Fin</span>Accelera</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accounting Basics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#introduction to accounting">Introduction To Accounting</a></li>
+                  <li><a class="dropdown-item" href="#the accounting process">The Accounting Process</a></li>
+                  <li><a class="dropdown-item" href="#the accounting information">The Accounting Information</a></li>
+                  <li><a class="dropdown-item" href="#accounting system">Accounting System</a></li>
+                  <li><a class="dropdown-item" href="#forms of business organizations">Forms of Business Organizations</a></li>
+                  <li><a class="dropdown-item" href="#financial statement">Financial Statement</a></li>
+                  <li><a class="dropdown-item" href="#gaap">GAAP</a></li>
+                  <li><a class="dropdown-item" href="#ledger">Ledger</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/acc1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/acc8.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/acc9.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+            <!-- ITA Section -->
+            <section id="introduction to accounting" class="introduction to accounting section-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                      <div class="introduction to accounting-img">
+                        <img src="img/ita2.jpeg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                      <div class="introduction to accounting-text">
+                        <h1>Introduction To Accounting</h1> <br> <h5>By Needles, Anderson, Principles of Accounting, Fourth Edition</h5>
+                        <p>Accounting is the systematic process of identifying, recording, summarizing, analyzing, and 
+                           interpreting financial information about a business entity or an individual. It involves the
+                            measurement, processing, and communication of financial data to various stakeholders, 
+                            facilitating informed decisions.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- TAP Section -->
+            <section id="the accounting process" class="the accounting process section-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                      <div class="the accounting process-img">
+                        <img src="img/TAP.PNG" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                      <div class="the accounting process-text">
+                        <h1>The Accounting Process</h1> 
+                        <p>The accounting process is a systematic method used by businesses 
+                            and individuals to track, record, interpret, and communicate financial information.</p>
+                          <!-- <a href="" class="btn btn-warning">Learn More</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <!-- TAI Section -->
+            <section id="the accounting information" class="the accounting information section-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                      <div class="the accounting information-img">
+                        <img src="img/tai.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                      <div class="the accounting information-text">
+                        <h1>The Accounting Information</h1> 
+                        <!-- <p>Accounting information refers to the financial data and reports generated through 
+                            the accounting process. It provides insights into an entity's financial performance,
+                             position, and cash flows, aiding decision-making by stakeholders.</p> -->
+                          <a href="tai.html" class="btn btn-warning">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- AS Section -->
+            <section id="accounting system" class="accounting system section-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                      <div class="accounting system-img">
+                        <img src="img/as.PNG" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                      <div class="accounting system-text">
+                        <h1>Accounting System</h1> 
+                        <p>An accounting system refers to the organized structure and processes used by an 
+                            organization to record, analyze, summarize, and report financial transactions. 
+                            It comprises procedures, software, controls, and personnel designed to manage an 
+                            entity's financial information accurately and efficiently.</p>
+                          <!-- <a href="" class="btn btn-warning">Learn More</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <!-- Forms Of BO Section -->
+            <section id="forms of business organizations" class="forms of business organizations section-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-12">
+                    <div class="forms of business organizations-img">
+                      <img src="img/bo.jpeg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="forms of business organizations">
+                      <h1>Forms of Business Organizations</h1> 
+                      <p></p>
+                      <h4>Sole Proprietorship:</h4>
+                      <p>This is the simplest form of business, owned and operated by a single individual. The owner is personally liable for all debts and obligations. It's easy to start, but the owner has unlimited liability.</p>
+                      <p></p>
+                      <h4>Partnership:</h4>
+                      <p>A partnership involves two or more individuals sharing ownership and management responsibilities. Partnerships can be general partnerships (where all partners share equal responsibility and liability) or limited partnerships (where there are both general and limited partners, with different levels of liability).</p>
+                      <p></p>
+                      <h4>Corporation:</h4>
+                      <p>A corporation is a separate legal entity from its owners (shareholders). It offers limited liability to shareholders, has a formal structure with a board of directors, officers, and shareholders, and can issue stock to raise capital. Corporations have complex legal and tax requirements.</p>
+                      <p></p>
+                        <!-- <a href="" class="btn btn-warning">Learn More</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+              <!-- FS Section -->
+            <section id="financial statement" class="financial statement section-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-12">
+                    <div class="financial statement-img">
+                      <img src="img/fs.jpeg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="financial statement-text">
+                      <h1>Financial Statement</h1> 
+                      <p></p>
+                        <a href="fs.html" class="btn btn-warning">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+            <!-- GAAP Section -->
+            <section id="gaap" class="gaap section-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-12">
+                    <div class="gaap-img">
+                      <img src="img/gaap.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="gaap-text">
+                      <h1>GAAP( General Accepted Accounting Principle )</h1> 
+                        <a href="gaap.html" class="btn btn-warning">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+            <!-- Ledger Section -->
+            <section id="ledger" class="ledger-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-12">
+                    <div class="ledger-img">
+                      <img src="img/ledger.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="ledger-text">
+                      <h1>Ledger</h1> 
+                        <a href="ledger.html" class="btn btn-warning">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+          <!-- footer -->
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+          <p class="text-white">All Rights Reserved &copy; FinAccelera</p>
+       </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
